@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">
+        <div class="input-box">
+          <input type="text" id="number" disabled />
+        </div>
+
+        <div class="button-container">
+          <button class="btn" id="c">C</button>
+          <button class="btn" onclick="arrowClick()">arrow</button>
+          <button class="btn pink" onclick="addToInput('/')">/</button>
+          <button class="btn" onclick="addToInput('7')">7</button>
+          <button class="btn" onclick="addToInput('8')">8</button>
+          <button class="btn" onclick="addToInput('9')">9</button>
+          <button class="btn pink" onclick="addToInput('*')">x</button>
+          <button class="btn" onclick="addToInput('4')">4</button>
+          <button class="btn" onclick="addToInput('5')">5</button>
+          <button class="btn" onclick="addToInput('6')">6</button>
+          <button class="btn pink" onclick="addToInput('-')">-</button>
+          <button class="btn" onclick="addToInput('1')">1</button>
+          <button class="btn" onclick="addToInput('2')">2</button>
+          <button class="btn" onclick="addToInput('3')">3</button>
+          <button class="btn pink" onclick="addToInput('+')">+</button>
+          <button class="btn" id="zero" onclick="addToInput('0')">0</button>
+          <button class="btn pink" onclick="calculateResult()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
